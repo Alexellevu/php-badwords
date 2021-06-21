@@ -16,11 +16,11 @@ $paragrafo = "prova di una stringa di testo per php e di inizio back-end per boo
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-    h1,h2{
+    h1,h2,h3{
       color:green; 
       background-color:cyan; 
       width:60%;
-      text-transform:uppercase;
+      
       padding:20px;
       border-radius:8px;
       
@@ -29,11 +29,12 @@ $paragrafo = "prova di una stringa di testo per php e di inizio back-end per boo
   
 </head>
 <body>
-   <h2>Frase iniziale: <br> <?php echo $paragrafo ?></h2>
+   <h2>Stringa iniziale: <br> <?php echo $paragrafo ?></h2>
    <?php var_dump($paragrafo) ?>
    <h2>la lunghezza della stringa è: <?php echo strlen($paragrafo) ?></h2>
-    <h1>la nuova stringa censurata sarà:</h1>
-    <h2><?php echo str_replace($censura,'***',$paragrafo)?> di lunghezza: <?php echo strlen($paragrafo) ?></h2>
+    <h2>la nuova stringa censurata sarà:</h2>
+    <h2><?php echo str_replace($censura,'***',$paragrafo)?> </h2>
+    <h2>di lunghezza: <?php echo strlen($paragrafo) ?></h2>
 
     
 
